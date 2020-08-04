@@ -655,8 +655,9 @@ footer .logo {
   margin-right: 69px;
 }
 
-.footer-right-side {
+.footer-center-side {
   padding-top: 72px;
+  margin-right: 94px;
 }
 
 .slogan {
@@ -669,18 +670,18 @@ footer .social-list {
   padding-bottom: 100px;
 }
 
-.footer-right-side .social-link {
+.footer-center-side .social-link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color 250ms var(--timing-function);
 }
 
-.footer-right-side .social-link:hover,
-.footer-right-side .social-link:focus {
+.footer-center-side .social-link:hover,
+.footer-center-side .social-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-right-side .social-list-item-svg {
+.footer-center-side .social-list-item-svg {
   fill: #fff;
 }
 
@@ -709,4 +710,69 @@ footer .social-list {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-theme-color);
+}
+/* Форма */
+.footer-right-side {
+  margin-top: 72px;
+}
+.footer-right-side .slogan {
+  margin-bottom: 20px;
+}
+
+.footer-right-side-form {
+  display: flex;
+}
+
+.footer-form-input {
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+  width: 358px;
+  height: 50px;
+
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--dark-theme-color);
+  opacity: 0.6;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: #2f303a;
+  outline: none;
+}
+
+.footer-form-button {
+  display: flex;
+
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--dark-theme-color);
+
+  background-color: var(--accent-color);
+
+  align-items: center;
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-form-button-txt {
+  margin-right: 10px;
+}
+
+.footer-form-button-svg {
+  fill: var(--dark-theme-color);
 }
