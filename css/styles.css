@@ -553,7 +553,7 @@ img {
 }
 
 .gallery-list-item:not(:nth-child(3n)) {
-  margin-right: 26px;
+  margin-right: 25px;
 }
 
 .gallery-list-item:not(:nth-last-child(-n + 3)) {
