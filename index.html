@@ -569,7 +569,7 @@
 
           <b class="slogan">подпишитесь на рассылку</b>
 
-        <form action="" class="footer-right-side-form">
+        <form action="#" class="footer-right-side-form">
 
           <input name="mail" class="footer-form-input" placeholder="E-mail"></input>
 
@@ -593,15 +593,58 @@
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
 
-      <div class="modal">
-        <button class="modal-button-close" data-modal-close>
+      <form action="#" class="modal">
+
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        
+        <ul class="modal-input-list list">
+
+          <li class="modal-input-list-item">
+            <label for="name" class="modal-input-list-item-label">Имя</label>
+            <input name="name" id="name" class="modal-input name" type="text" placeholder=" ">
+          </li>
+
+          <li class="modal-input-list-item">
+            <label for="phone" class="modal-input-list-item-label">Телефон</label>
+            <input name="phone" id="phone" class="modal-input phone" type="tel" placeholder=" ">
+          </li>
+
+          <li class="modal-input-list-item">
+            <label for="mail" class="modal-input-list-item-label">Почта</label>
+            <input name="mail" id="mail" class="modal-input mail" type="email" placeholder=" ">
+          </li>
+
+        </ul >
+        
+        <label class="modal-comment-label" for="comment">Комментарий</label>
+
+        <textarea class="modal-comment" name="comment" id="comment" placeholder=" " ></textarea>
+
+        <div class="agreement">
+
+          <input class="agreement-checkbox" type="checkbox" id="agreement">
+
+          
+          <label class="agreement-txt" for="agreement">Соглашаюсь с рассылкой и принимаю</label>
+
+          <a class="agreement-link"
+                    href=""
+                    target="_blank">Условия договора</a>
+
+        
+      </div>
+
+      <button type="submit" class="modal-submit-button">Отправить</button>
+
+        
+        <button type="button" class="modal-button-close" data-modal-close>
           <svg class="modal-button-close-icon" width="11" height="11">
             <use href="./images/sprite.svg#icon-closed"></use>
           </svg>
           
         
         </button>
-      </div>
+      </form>
       
     </div>
 

@@ -250,6 +250,7 @@ img {
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 
   transition: background-color 250ms var(--timing-function);
 }
@@ -523,6 +524,7 @@ img {
 
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
+  cursor: pointer;
 }
 .filter-list-item-btn:hover,
 .filter-list-item-btn:focus {
@@ -754,6 +756,7 @@ footer .social-list {
   padding-bottom: 10px;
   padding-left: 29px;
 
+  font-weight: 700;
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.875;
@@ -767,6 +770,7 @@ footer .social-list {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer-form-button-txt {
@@ -797,6 +801,7 @@ footer .social-list {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -805,6 +810,97 @@ footer .social-list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: var(--title-color);
+  font-size: 20px;
+  line-height: 1, 15;
+
+  letter-spacing: 0.03em;
+}
+
+.modal-input-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal-input-list-item {
+  margin-bottom: 28px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+
+  padding-left: 12px;
+  margin-bottom: 30px;
+}
+
+.agreement-checkbox {
+  margin-right: 8.38px;
+}
+
+.agreement-txt,
+.agreement-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.agreement-txt {
+  color: #757575;
+  margin-right: 5px;
+}
+
+.agreement-link {
+  color: var(--accent-color);
+}
+
+.modal-submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--dark-theme-color);
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-clor 250ms var(--timing-function);
+}
+
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+  background-color: #188ce8;
 }
 
 .modal-button-close {
@@ -819,6 +915,7 @@ footer .social-list {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .modal-button-close-icon {
