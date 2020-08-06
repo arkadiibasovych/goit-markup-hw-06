@@ -597,59 +597,61 @@
 
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         
-        <ul class="modal-input-list list">
+        
 
-          <li class="modal-input-list-item">
+          <div class="modal-input-container">
             
             <input name="name" id="name" class="modal-input name" type="text" placeholder=" ">
 
-            <label for="name" class="modal-input-label">
-            
-              <svg class="modal-input-label-icon" width="12" height="12">
+            <label for="name" class="modal-input-label">Имя</label>
+
+              <svg class="modal-input-label-icon icon-modal-name" width="12" height="12">
                 <use href="./images/sprite.svg#icon-modal-name">
-            
+              
                 </use>
               </svg>
-            
-              Имя</label>
-          </li>
+          </div>
 
-          <li class="modal-input-list-item">
+          <div class="modal-input-container">
             
             <input name="phone" id="phone" class="modal-input phone" type="tel" placeholder=" ">
 
-            <label for="phone" class="modal-input-label">
-              <svg class="modal-input-label-icon" width="13" height="13">
+            <label for="phone" class="modal-input-label">Телефон</label>
+
+              <svg class="modal-input-label-icon icon-modal-phone" width="13" height="13">
                 <use href="./images/sprite.svg#icon-modal-phone">
-            
+              
                 </use>
               </svg>
-              Телефон</label>
-          </li>
+          </div>
 
-          <li class="modal-input-list-item">
+          <div class="modal-input-container">
             
             <input name="mail" id="mail" class="modal-input mail" type="email" placeholder=" ">
 
-            <label for="mail" class="modal-input-label">
-            
-              <svg class="modal-input-label-icon" width="15" height="12">
-                <use href="./images/sprite.svg#icon-modal-mail">
-            
-                </use>
-              </svg>
-            
-              Почта</label>
-          </li>
+            <label for="mail" class="modal-input-label">Почта 
 
-        </ul >
+              
+
+            </label>
+
+            <svg class="modal-input-label-icon icon-modal-mail" width="15" height="12">
+              <use href="./images/sprite.svg#icon-modal-mail">
+            
+              </use>
+            </svg>
+          </div>
+
         
         
+        
 
-        <textarea class="modal-comment" name="comment" id="comment" placeholder=" " ></textarea>
+       <div class="modal-comment-container">
+         <textarea class="modal-comment" name="comment" id="comment" placeholder=" "></textarea>
+      
+      <label class="modal-comment-label" for="comment">Комментарий</label>
 
-        <label class="modal-comment-label" for="comment">Комментарий</label>
-
+</div>
         <div class="agreement">
 
           <input class="agreement-checkbox" type="checkbox" id="agreement">

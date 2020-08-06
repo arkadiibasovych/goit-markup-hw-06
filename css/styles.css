@@ -803,8 +803,6 @@ footer .social-list {
   transform: translate(-50%, -50%);
   padding: 40px;
 
-  width: 528px;
-  height: 581px;
   background-color: #fff;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -823,16 +821,20 @@ footer .social-list {
   letter-spacing: 0.03em;
 }
 
-.modal-input-list {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+.modal-input-container {
+  position: relative;
 
-.modal-input-list-item {
   margin-bottom: 28px;
 }
 
 .modal-input-label {
+  position: absolute;
+
+  top: 50%;
+  left: 42px;
+
+  transform: translateY(-50%);
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -843,17 +845,40 @@ footer .social-list {
 }
 
 .modal-input-label-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #212121;
   transition: fill 250ms var(--timing-function);
 }
 
-.modal-input {
+.modal-input,
+.modal-comment {
   width: 100%;
-  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: #757575;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
+}
+
+.modal-input {
+  padding-left: 42px;
+
+  height: 40px;
+}
+
+.modal-comment {
+  padding-top: 12px;
+  padding-left: 16px;
+  resize: none;
+  margin-bottom: 20px;
+  height: 120px;
 }
 
 .modal-input:hover,
@@ -869,29 +894,28 @@ footer .social-list {
   letter-spacing: 0.01em;
 }
 
-.modal-input:hover + .modal-input-label .modal-input-label-icon,
-.modal-input:focus + .modal-input-label .modal-input-label-icon {
+.modal-input:hover ~ .modal-input-label-icon,
+.modal-input:focus ~ .modal-input-label-icon {
   fill: var(--accent-color);
 }
 
-.modal-comment {
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  margin-bottom: 20px;
-  transition: border 250ms var(--timing-function);
+.modal-comment-container {
+  position: relative;
+  display: flex;
 }
 
 .modal-comment-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
   color: #757575;
   transition: color 250ms var(--timing-function),
-    font-size 250ms var(--timing-function);
+    font-size 250ms var(--timing-function), top 250ms var(--timing-function);
 }
 
 .modal-comment:hover,
@@ -901,6 +925,7 @@ footer .social-list {
 
 .modal-comment:hover + .modal-comment-label,
 .modal-comment:focus + .modal-comment-label {
+  top: -20px;
   color: var(--accent-color);
   font-size: 12px;
   line-height: 1.17;
