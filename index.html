@@ -81,7 +81,7 @@
       <!--Особенности-->
       <section>
         <div class="container features">
-          <h2 hidden>Наши особенности</h2>
+          <h2 class="is-hidden">Наши особенности</h2>
           <ul class="features-list list">
             <li class="features-list-item ">
               <div class="features-list-icon">
@@ -654,10 +654,24 @@
 </div>
         <div class="agreement">
 
-          <input class="agreement-checkbox" type="checkbox" id="agreement">
+          
 
           
-          <label class="agreement-txt" for="agreement">Соглашаюсь с рассылкой и принимаю</label>
+          <label class="agreement-txt" >
+
+            <input class="is-hidden modal-checkbox"  type="checkbox" >
+
+            <span class="agreement-checkbox"> 
+
+              <svg class="checked-icon" width="11" height="8">
+                <use href="./images/sprite.svg#icon-modal-checkbox">
+
+              </use>
+            </svg>
+
+            </span>
+
+            Соглашаюсь с рассылкой и принимаю</label>
 
           <a class="agreement-link"
                     href=""

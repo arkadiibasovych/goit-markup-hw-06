@@ -76,6 +76,17 @@ img {
   color: var(--accent-color);
 }
 
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Шапка */
 
 .navigation {
@@ -885,13 +896,14 @@ footer .social-list {
 .modal-input:focus,
 .modal-input:not(:placeholder-shown) {
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 .modal-input:hover + .modal-input-label,
 .modal-input:focus + .modal-input-label,
 .modal-input:not(:placeholder-shown) + .modal-input-label {
   left: 18px;
-  transform: translateY(-280%);
+  transform: translateY(-40px);
   color: var(--accent-color);
   font-size: 12px;
   line-height: 1.17;
@@ -920,19 +932,21 @@ footer .social-list {
 
   color: #757575;
   transition: color 250ms var(--timing-function),
-    font-size 250ms var(--timing-function), top 250ms var(--timing-function);
+    font-size 250ms var(--timing-function),
+    transform 250ms var(--timing-function);
 }
 
 .modal-comment:hover,
 .modal-comment:focus,
 .modal-comment:not(:placeholder-shown) {
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 .modal-comment:hover + .modal-comment-label,
 .modal-comment:focus + .modal-comment-label,
 .modal-comment:not(:placeholder-shown) + .modal-comment-label {
-  top: -20px;
+  transform: translateY(-32px);
   color: var(--accent-color);
   font-size: 12px;
   line-height: 1.17;
@@ -948,7 +962,32 @@ footer .social-list {
 }
 
 .agreement-checkbox {
-  margin-right: 8.38px;
+  display: flex;
+  margin-right: 7px;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 15px;
+  border: 1.8px solid #212121;
+  border-radius: 2px;
+  background-color: #fff;
+  transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+}
+
+.checked-icon {
+  fill: transparent;
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-checkbox:checked + .agreement-checkbox > .checked-icon {
+  fill: #ffffff;
+}
+
+.modal-checkbox:checked + .agreement-checkbox {
+  background-color: var(--accent-color);
+  border: 1.8px solid var(--accent-color);
 }
 
 .agreement-txt,
@@ -959,6 +998,8 @@ footer .social-list {
 }
 
 .agreement-txt {
+  display: flex;
+  align-items: center;
   color: #757575;
   margin-right: 5px;
 }
