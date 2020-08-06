@@ -964,6 +964,7 @@ footer .social-list {
 .agreement-checkbox {
   display: flex;
   margin-right: 7px;
+
   justify-content: center;
   align-items: center;
 
